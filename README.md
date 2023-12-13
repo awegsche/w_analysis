@@ -68,14 +68,20 @@ The file should look like this:
 
 ### 200cm
 
-Beam1: `lintrack/2023-04-06/LHCB1/Results/betabeat_at_2m_noKnobs_noBK_omc2`, seems to be omc3, not sure if on/off mom
-Beam2: `lintrack/2023-04-06/LHCB2/Results/BBsrc_200cm_Quick_Check`, not sure if on/off mom
+- [x] Beam1: `lintrack/2023-04-06/LHCB1/Results/OnOffMom_2m_withAllKnobs_BK_bbsrc/`
+- [ ] Beam2: `lintrack/2023-04-06/LHCB2/Results/BBsrc_200cm_Quick_Check`, not sure if on/off mom
 
 ### 120cm
 
-Beam1: `lintrack/2023-04-06/LHCB1/Results/1.2m_Knobs_noBK_OnMom_omc3/`, not sure if on/off mom
-Beam2: `lintrack/2023-04-06/LHCB2/Results/OMC3_120cm_on_off_momentum`, for sure on/off mom
+- [ ] Beam1: `lintrack/2023-04-06/LHCB1/Results/1.2m_Knobs_noBK_OnMom_omc3/`, not sure if on/off mom
+- [ ] Beam2: `lintrack/2023-04-06/LHCB2/Results/OMC3_120cm_on_off_momentum`, for sure on/off mom
 
 ### 60cm
 
+- [ ] Beam1:
+- [ ] Beam2:
+
 ### 30cm
+
+- [ ] Beam1:
+- [ ] Beam2:

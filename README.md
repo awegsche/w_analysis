@@ -1,5 +1,7 @@
 # W-analysis
 
+![example plot](plots/b1_200cm_bbsrc.pdf)
+
 ## Setup
 
 - Create access to lintrack:

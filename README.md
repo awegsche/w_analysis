@@ -3,8 +3,7 @@
 ## Setup
 
 - Create access to lintrack:
- 
-  mount, link, whatever suits you best. I linked it to
+ mount, link, whatever suits you best. I linked it to
 
   `ln -s  /user/slops/data/LHC_DATA/OP_DATA/Betabeat lintrack`
 
@@ -19,11 +18,10 @@
 
 ### omc3
 
-- copy `command.run`, delete the logging part (ideally leave only the call to `python -m omc3`,
+- Copy `command.run`, delete the logging part (ideally leave only the call to `python -m omc3`,
 but you can leave `ssh optics2`)
-- change `outpudir` to the new one (otherwise it would overwrite the original, BAD!!!!)
-- add `--chromatic_beating`
-- 
+- Change `outpudir` to the new one (otherwise it would overwrite the original, BAD!!!!)
+- Add `--chromatic_beating`
 The file should now look like this:
 ```sh
 /afs/cern.ch/eng/sl/lintrack/omc_python_edge/bin/python -m omc3.hole_in_one \
@@ -43,13 +41,13 @@ The file should now look like this:
 
 ### Beta-Beat.src
 
-- same as for omc3: copy `command.run`, delete the logging part (ideally leave only the call to `python -m omc3`,
+- Same as for omc3: copy `command.run`, delete the logging part (ideally leave only the call to `python -m omc3`,
 but you can leave `ssh optics2`)
-- change `outpudir` to the new one (otherwise it would overwrite the original, BAD!!!!)
-- change `--accel` option to `lhc` instead of `LHCB<beam_number>`
-- add `--lhcmode=lhc_runIII_2023`, `--beam=<beam_number>`
-- change `--model` to `--twiss_file`
-- change `--tbt_analysis` to `--algorithm`
+- Change `outpudir` to the new one (otherwise it would overwrite the original, BAD!!!!)
+- Change `--accel` option to `lhc` instead of `LHCB<beam_number>`
+- Add `--lhcmode=lhc_runIII_2023`, `--beam=<beam_number>`
+- Change `--model` to `--twiss_file`
+- Change `--tbt_analysis` to `--algorithm`
 
 The file should look like this:
 ```sh
@@ -66,6 +64,11 @@ The file should look like this:
 
 ## Measurements to re-analyse
 
+### Injection
+
+- [x] Beam1: done, but output looks really bad (much, much noise)
+- [ ] Beam2:
+ 
 ### 200cm
 
 - [x] Beam1: `lintrack/2023-04-06/LHCB1/Results/OnOffMom_2m_withAllKnobs_BK_bbsrc/`

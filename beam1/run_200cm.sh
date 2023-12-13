@@ -1,0 +1,24 @@
+/afs/cern.ch/work/a/awegsche/public/forCommissionning/venv/bin/python \
+  -m \
+  omc3.hole_in_one \
+  --optics \
+  --files \
+  /user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-04-06/LHCB1/Measurements/Beam1@BunchTurn@2023_04_06@21_34_59_181/bunchid1016_Beam1@BunchTurn@2023_04_06@21_34_59_181.sdds \
+  /user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-04-06/LHCB1/Measurements/Beam1@BunchTurn@2023_04_06@21_34_59_181/bunchid2029_Beam1@BunchTurn@2023_04_06@21_34_59_181.sdds \
+  /user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-04-06/LHCB1/Measurements/Beam1@BunchTurn@2023_04_06@21_34_59_181/bunchid2456_Beam1@BunchTurn@2023_04_06@21_34_59_181.sdds \
+  /user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-04-06/LHCB1/Measurements/Beam1@BunchTurn@2023_04_06@21_36_15_895/bunchid1016_Beam1@BunchTurn@2023_04_06@21_36_15_895.sdds \
+  /user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-04-06/LHCB1/Measurements/Beam1@BunchTurn@2023_04_06@21_36_15_895/bunchid2029_Beam1@BunchTurn@2023_04_06@21_36_15_895.sdds \
+  /user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-04-06/LHCB1/Measurements/Beam1@BunchTurn@2023_04_06@21_36_15_895/bunchid2456_Beam1@BunchTurn@2023_04_06@21_36_15_895.sdds \
+  --outputdir \
+  200cm_b1 \
+  --calibrationdir \
+  /afs/cern.ch/eng/sl/lintrack/LHC_commissioning2017/Calibration_factors_2017/Calibration_factors_2017_beam1 \
+  --model_dir \
+  /user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-04-06/LHCB1/Models/Coupling_afterRamp_2m_omc3 \
+  --accel \
+  lhc \
+  --year \
+  2022 \
+  --beam \
+  1 \
+  --chromatic_beating

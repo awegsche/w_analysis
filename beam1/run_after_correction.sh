@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+#/afs/cern.ch/eng/sl/lintrack/miniconda2/bin/python \
+#  ../Beta-Beat.src/GetLLM/GetLLM.py \
+#  --accel=LHCB1 \
+#  --model=/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/models/LHCB1/phase_knob100_electronTunes/twiss.dat \
+#  --files=/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_11_22_955-1_6600/Beam1@Turn@2023_03_28@23_11_22_955.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_12_37_110-1_6600/Beam1@Turn@2023_03_28@23_12_37_110.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_13_56_947-1_6600/Beam1@Turn@2023_03_28@23_13_56_947.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_15_11_441-1_6600/Beam1@Turn@2023_03_28@23_15_11_441.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@BunchTurn@2023_03_28@23_20_18_579-1_6600/Beam1@BunchTurn@2023_03_28@23_20_18_579.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_20_18_579-1_6600/Beam1@Turn@2023_03_28@23_20_18_579.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_21_34_521-1_6600/Beam1@Turn@2023_03_28@23_21_34_521.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_24_54_795-1_6600/Beam1@Turn@2023_03_28@23_24_54_795.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_26_11_467-1_6600/Beam1@Turn@2023_03_28@23_26_11_467.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_27_25_670-1_6600/Beam1@Turn@2023_03_28@23_27_25_670.sdds \
+#  --output=after_correction \
+#  --tbtana=SUSSIX \
+#  --bpmu=mm \
+#  --useerrorofmean=false \
+#  --lhcphase=0 \
+#  --errordefs=/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/models/LHCB1/phase_knob100_electronTunes/error_deff.txt \
+#  --calibration=/afs/cern.ch/eng/sl/lintrack/LHC_commissioning2017/Calibration_factors_2017/Calibration_factors_2017_beam1 \
+#  --range=11
+
+/afs/cern.ch/eng/sl/lintrack/miniconda2/bin/python \
+  ../Beta-Beat.src/GetLLM/getsuper.py \
+  --accel=lhc \
+  --lhcmode=lhc_runIII_2023 \
+  --beam=1 \
+  --files=/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_11_22_955-1_6600/Beam1@Turn@2023_03_28@23_11_22_955.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_12_37_110-1_6600/Beam1@Turn@2023_03_28@23_12_37_110.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_13_56_947-1_6600/Beam1@Turn@2023_03_28@23_13_56_947.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_15_11_441-1_6600/Beam1@Turn@2023_03_28@23_15_11_441.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@BunchTurn@2023_03_28@23_20_18_579-1_6600/Beam1@BunchTurn@2023_03_28@23_20_18_579.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_20_18_579-1_6600/Beam1@Turn@2023_03_28@23_20_18_579.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_21_34_521-1_6600/Beam1@Turn@2023_03_28@23_21_34_521.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_24_54_795-1_6600/Beam1@Turn@2023_03_28@23_24_54_795.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_26_11_467-1_6600/Beam1@Turn@2023_03_28@23_26_11_467.sdds,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-03-28/LHCB1/Measurements/Beam1@Turn@2023_03_28@23_27_25_670-1_6600/Beam1@Turn@2023_03_28@23_27_25_670.sdds \
+  --twissfile=/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/models/LHCB1/b1_injection_bbsrc/twiss.dat \
+  --output=after_correction_W \
+  --algorithm=SUSSIX
+
+  #--files=/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_28_14_348-1_6600/Beam1@Turn@2023_08_30@17_28_14_348.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_29_34_502-1_6600/Beam1@Turn@2023_08_30@17_29_34_502.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_31_23_066-1_6600/Beam1@Turn@2023_08_30@17_31_23_066.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_32_36_044-1_6600/Beam1@Turn@2023_08_30@17_32_36_044.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_34_47_213-1_6600/Beam1@Turn@2023_08_30@17_34_47_213.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_36_03_046-1_6600/Beam1@Turn@2023_08_30@17_36_03_046.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_37_18_955-1_6600/Beam1@Turn@2023_08_30@17_37_18_955.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_38_33_988-1_6600/Beam1@Turn@2023_08_30@17_38_33_988.sdds.raw,/user/slops/data/LHC_DATA/OP_DATA/Betabeat/2023-08-30/LHCB1/Measurements/Beam1@Turn@2023_08_30@17_39_47_074-1_6600/Beam1@Turn@2023_08_30@17_39_47_074.sdds.raw \

@@ -1,6 +1,6 @@
 # W-analysis
 
-![example plot](plots/b1_200cm_bbsrc.pdf)
+![example plot](plots/b1_200cm_bbsrc.png)
 
 ## Setup
 

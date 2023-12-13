@@ -120,6 +120,7 @@ def plot_w(path: str, out: str, mdl: str = None):
     fig.tight_layout()
 
     fig.savefig(f"plots/{out}")
+    fig.savefig(f"plots/{out.replace('.pdf', '.png')}")
 
 
 def print_point(ax, model, key, name=None, lim=1.0, no_label=False):
